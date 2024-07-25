@@ -1,20 +1,19 @@
-package com.carRentalSystem;
+package Number;
 
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        CarRentalSystem rentalSystem=new CarRentalSystem();
-        Car car1 =new Car("c001","Toyota","Camry",60.0);
-        Car car2 =new Car("c002","Honda","Accord",70.0);
-        Car car3 =new Car("c003","Mahindra","Thar",160.0);
-        Car car4 =new Car("c004","Tata","nano",10.0);
-        Car car5 =new Car("c005","suzuki","xuv100",40.0);
+        // Press Alt+Enter with your caret at the highlighted text to see how
+        // IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        rentalSystem.addCar(car1);
-        rentalSystem.addCar(car2);
-        rentalSystem.addCar(car3);
-        rentalSystem.addCar(car4);
-        rentalSystem.addCar(car5);
-        rentalSystem.menu();
+        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        for (int i = 1; i <= 5; i++) {
 
+            // Press Shift+F9 to start debugging your code. We have set one breakpoint
+            // for you, but you can always add more by pressing Ctrl+F8.
+            System.out.println("i = " + i);
+        }
     }
-    }
+}
