@@ -1,15 +1,25 @@
+package Array;
+
+import java.util.Scanner;
+
 public class LargestNumber {
-    public static int getLargestNumber(int[] numbers){
-        int Largest=Integer.MIN_VALUE;
-        for(int i = 0; i<numbers.length; i++){
-            if(Largest<numbers[i]){
-                Largest=numbers[i];
-            }
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the size : ");
+        int x=sc.nextInt();
+        int a[]=new int[x];
+
+        for(int i=0;i<x;i++){
+            System.out.print("Enter the  Element : ");
+             a[i]=sc.nextInt();
         }
-        return Largest;
+
+        int max=a[0];
+        for(int j=0;j<a.length;j++){
+                 if(a[j]>max)
+                     max=a[j];
+            }
+        System.out.println("Largest Number is : " +max);
+        }
     }
-    public static void main(String args[]){
-        int numbers []={1,3,5,7,9,6};
-        System.out.println("Largest value :"+getLargestNumber(numbers));
-    }
-}
+
